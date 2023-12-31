@@ -1,0 +1,41 @@
+@import "../../scss/variables.scss";
+
+.button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 8px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $colorBtnBack;
+  color: $colorContent;
+  cursor: pointer;
+  transition: border-color 0.25s,
+              border-radius .3s ease,
+              background-color .3s ease;
+
+  &.square {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+
+    &:active,
+    &.pressed {
+      border-radius: 50%;
+    }
+  }
+
+  &:hover {
+    border-color: $colorBtnBorderHover;
+  }
+
+  &:active,
+  &.pressed {
+    border-color: $colorContent;
+    background-color: $colorBtnBackActive;
+  }
+}

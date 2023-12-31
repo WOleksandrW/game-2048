@@ -1,0 +1,60 @@
+.control-panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-panel {
+  position: relative;
+  height: 120px;
+  width: 120px;
+
+  .btn {
+    position: absolute;
+
+    &.top {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    &.bottom {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    &.left {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+    }
+
+    &.right {
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.sub-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .list {
+    margin-left: 20px;
+  }
+}
+
+.sub-btn-list {
+  display: flex;
+  gap: 10px;
+}

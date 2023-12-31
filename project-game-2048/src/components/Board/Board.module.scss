@@ -1,0 +1,55 @@
+@import "../../scss/variables.scss";
+
+.board {
+  padding: 5px 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: fit-content;
+  color: $colorBoardContent;
+  background-color: $colorBoardBack;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.info-block {
+  display: flex;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorGameBack;
+  padding: 5px;
+  align-items: center;
+  border-radius: 10px;
+  min-width: 70px;
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: $colorContentDark;
+  }
+  .value {
+    color: $colorContent;
+  }
+}
+
+.field {
+  background-color: $colorGameBack;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
